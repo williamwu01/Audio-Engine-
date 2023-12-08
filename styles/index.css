@@ -202,6 +202,13 @@ main a {
   color: inherit;
   list-style: none;
 }
+main .in-the-news div {
+  padding: 2rem 2rem 1rem;
+}
+
+.this-is video.source {
+  width: 100%;
+}
 
 footer {
   background-color: #d3d3d3;
@@ -217,9 +224,14 @@ footer a {
   padding: 5px;
 }
 
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
 .socials svg {
-  width: 32px;
-  height: 32px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
