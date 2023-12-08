@@ -52,26 +52,37 @@ header {
 
 #nav_menu {
   display: none;
+  z-index: 100;
 }
 #nav_menu.expanded {
   display: block;
 }
+#nav_menu.li:hover {
+  background-color: darkgrey;
+}
 
 .toggle {
-  width: 1rem;
+  width: 2.5rem;
+  height: 0.4rem;
   position: relative;
 }
 .toggle::before, .toggle::after {
   content: "";
   position: absolute;
   border: 1px solid white;
-  width: 100%;
+  width: 110%;
 }
 .toggle::before {
-  top: -10px;
+  top: -13px;
+  right: -0.1rem;
+  height: 0.3rem;
+  background-color: white;
 }
 .toggle::after {
-  top: 5px;
+  top: 8px;
+  right: -0.1rem;
+  height: 0.3rem;
+  background-color: white;
 }
 
 .icons {

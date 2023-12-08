@@ -1,17 +1,17 @@
 const toggleEl = document.querySelector('.toggle');
 const navMenu = document.getElementById('nav_menu');
-let slideIndex = 1;
-showSlides(slideIndex);
 
 toggleEl.addEventListener('click', () => {
 	console.log('click');
-    const isExpanded = toggleEl.getAttribute('aria-expanded') === 'true';
-    // Toggle the aria-expanded attribute
-    toggleEl.setAttribute('aria-expanded', String(!isExpanded));
-		// Toggle the class on the #nav_menu element
-		navMenu.classList.toggle('expanded', !isExpanded);
+	const isExpanded = toggleEl.getAttribute('aria-expanded') === 'true';
+	// Toggle the aria-expanded attribute
+	toggleEl.setAttribute('aria-expanded', String(!isExpanded));
+	// Toggle the class on the #nav_menu element
+	navMenu.classList.toggle('expanded', !isExpanded);
 });
 
+let slideIndex = 1;
+showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -24,7 +24,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("my-slides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
