@@ -90,4 +90,18 @@ header {
   padding: 1rem;
 }
 
+footer {
+  background-color: #d3d3d3;
+  border-top: 1px solid;
+  padding: 2rem 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
 /*# sourceMappingURL=index.css.map */
