@@ -9,36 +9,43 @@
 
 #nav_menu {
 	display: none;
+	z-index: 100;
 
 	&.expanded {
 		display: block;
 	}
+
+	&.li:hover {
+		background-color: darkgrey;
+	}
 }
 
 .toggle {
-	// padding: 3rem;
-	width: 1rem;
-	// color: white;
+	width: 2.5rem;
+	height: 0.4rem;
 	position: relative;
-	// cursor: pointer;
 
 	&::before,
 	&::after {
 		content: '';
 		position: absolute;
 		border: 1px solid white;
-		width: 100%;
-		// width: 1rem;
-		// height: 2px;
+		width: 110%;
 		// transition: transform 0.3s ease;
 	}
 
 	&::before {
-		top: -10px;
+		top: -13px;
+		right: -0.1rem;
+		height: 0.3rem;
+		background-color: $lite-text;
 	}
 
 	&::after {
-		top: 5px;
+		top: 8px;
+		right: -0.1rem;
+		height: 0.3rem;
+		background-color: $lite-text;
 	}
 
 	// &.open {
