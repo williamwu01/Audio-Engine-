@@ -1,2 +1,8 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+
+main {
+	a {
+		@include styleless-links;
+	}
+}
