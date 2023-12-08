@@ -101,6 +101,12 @@ header {
   padding: 1rem;
 }
 
+main a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
 footer {
   background-color: #d3d3d3;
   border-top: 1px solid;
