@@ -191,6 +191,24 @@ main a {
   color: inherit;
   list-style: none;
 }
+main h2 {
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  padding: 2rem 1rem;
+  font-weight: 25;
+  font-size: 2.5rem;
+}
+main p {
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  padding: 1rem;
+  font-weight: 50;
+  font-size: 1.2rem;
+}
+main .shop-sliders img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
 main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
