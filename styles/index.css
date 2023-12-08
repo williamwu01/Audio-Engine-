@@ -191,6 +191,9 @@ main a {
   color: inherit;
   list-style: none;
 }
+main .in-the-news div {
+  padding: 2rem 2rem 1rem;
+}
 
 .this-is video.source {
   width: 100%;

@@ -5,4 +5,8 @@ main {
 	a {
 		@include styleless-links;
 	}
+
+	.in-the-news div {
+		padding: 2rem 2rem 1rem;
+	}
 }
