@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+//remove all styles on link
+@mixin styleless-links {
+	text-decoration: none;
+	color: inherit;
+	list-style: none;
+}
+
+//button style ready
+@mixin orange-button {
+	background: #f77d24;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 15px;
+	border-radius: 9px;
+}
+
+@mixin white-button {
+	background: #fff;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 15px;
+	border-radius: 9px;
+}

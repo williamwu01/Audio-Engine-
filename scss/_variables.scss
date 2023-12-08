@@ -1,0 +1,21 @@
+// @use 'sass:math';
+
+//colors
+$brand-colors: #000000;
+$body-bg-color: #ebe7e7;
+$footer-bg-color: #d3d3d3;
+
+//font color
+$lite-text: white;
+$dark-text: black;
+
+//fonts
+$font: Tahoma, 'Source Sans 3', sans-serif;
+//typographic defaults
+$line-height: 1.4;
+
+$desktopMedium: 78rem; //1248px
+$tabletLandscape: 64rem; //1024px
+$tabletPortrait: 53rem; //848px
+$phoneLandscape: 41rem; //656px
+$phonePortrait: 20rem; //320px

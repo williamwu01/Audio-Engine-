@@ -1,3 +1,36 @@
+html {
+  box-sizing: border-box;
+}
 
+* {
+  box-sizing: border-box; /*if we add any border or padding does not affect overall*/
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #000000;
+}
 
 /*# sourceMappingURL=index.css.map */

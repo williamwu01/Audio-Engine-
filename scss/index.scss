@@ -1,6 +1,14 @@
 //imports
 @use 'variables';
 
+//resets
+@use 'reset';
+@use 'typography';
+
 //site section
 @use 'header';
+@use 'hamburger';
 @use 'gallery';
+@use 'main';
+@use 'media';
+@use 'footer';
