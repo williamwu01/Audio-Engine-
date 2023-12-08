@@ -192,6 +192,10 @@ main a {
   list-style: none;
 }
 
+.this-is video.source {
+  width: 100%;
+}
+
 footer {
   background-color: #d3d3d3;
   border-top: 1px solid;
@@ -206,9 +210,14 @@ footer a {
   padding: 5px;
 }
 
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
 .socials svg {
-  width: 32px;
-  height: 32px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,2 +1,6 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+
+.this-is video.source {
+    width: 100%;
+}

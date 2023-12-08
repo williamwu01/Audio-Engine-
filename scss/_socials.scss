@@ -2,8 +2,12 @@
 @use 'mixins' as *;
 
 .socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    
     svg {
-        width: 32px;
-        height: 32px;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
