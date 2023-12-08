@@ -1,23 +1,61 @@
-/* Error: expected "{".
- *   ,
- * 4 | hi 
- *   |    ^
- *   '
- *   scss\_gallery.scss 4:4  @use
- *   scss\index.scss 11:1    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 4 \2502  hi \a   \2502     ^\a   \2575 \a   scss\\_gallery.scss 4:4  @use\a   scss\\index.scss 11:1    root stylesheet';
+html {
+  box-sizing: border-box;
 }
-<<<<<<< HEAD
-=======
+
+* {
+  box-sizing: border-box; /*if we add any border or padding does not affect overall*/
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.drop-down a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  color: white;
+  line-height: 2.8;
+}
+
+#nav_menu {
+  display: none;
+}
+#nav_menu.expanded {
+  display: block;
+}
 
 .toggle {
   width: 1rem;
@@ -57,14 +95,14 @@ body::before {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+.my-slides {
   display: none;
 }
 
@@ -168,5 +206,9 @@ footer a {
   padding: 5px;
 }
 
+.socials svg {
+  width: 32px;
+  height: 32px;
+}
+
 /*# sourceMappingURL=index.css.map */
->>>>>>> 40da10ceec197a3845d63775aec85d4c0eb3e4b2
