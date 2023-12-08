@@ -1,113 +1,18 @@
-html {
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *   ,
+ * 4 | hi 
+ *   |    ^
+ *   '
+ *   scss\_gallery.scss 4:4  @use
+ *   scss\index.scss 11:1    root stylesheet */
 
-* {
-  box-sizing: border-box; /*if we add any border or padding does not affect overall*/
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  margin: 0;
-}
-
-header {
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.drop-down a {
-  text-decoration: none;
-  color: inherit;
-  list-style: none;
-  color: white;
-  line-height: 2.8;
-}
-
-#nav_menu {
-  display: none;
-}
-#nav_menu.expanded {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 4 \2502  hi \a   \2502     ^\a   \2575 \a   scss\\_gallery.scss 4:4  @use\a   scss\\index.scss 11:1    root stylesheet';
 }
-
-.toggle {
-  width: 1rem;
-  position: relative;
-}
-.toggle::before, .toggle::after {
-  content: "";
-  position: absolute;
-  border: 1px solid white;
-  width: 100%;
-}
-.toggle::before {
-  top: -10px;
-}
-.toggle::after {
-  top: 5px;
-}
-
-.icons {
-  width: 4em;
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-#nav_menu {
-  position: absolute;
-  left: 0;
-  background-color: #000000;
-  width: 100%;
-  top: 3rem;
-  padding: 1rem;
-}
-
-main a {
-  text-decoration: none;
-  color: inherit;
-  list-style: none;
-}
-
-footer {
-  background-color: #d3d3d3;
-  border-top: 1px solid;
-  padding: 2rem 1rem;
-}
-footer a {
-  text-decoration: none;
-  color: inherit;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-}
-
-/*# sourceMappingURL=index.css.map */
