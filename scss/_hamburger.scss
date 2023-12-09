@@ -5,6 +5,11 @@
 	@include styleless-links;
 	color: $lite-text;
 	line-height: ($line-height) * 2;
+	margin: 1rem;
+}
+
+ul > li:hover {
+	background-color: rgb(62, 62, 62);
 }
 
 #nav_menu {
@@ -71,10 +76,20 @@
 }
 
 .icons {
-	width: 4em;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.icons a {
+	width: 2em;
 	display: flex;
 	gap: 0.5rem;
 	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.icon a:hover {
+	color: red;
 }
 
 #nav_menu {
