@@ -299,7 +299,31 @@ footer a {
   flex-direction: column;
   padding: 5px;
 }
+footer footer div {
+  width: 100%;
+  padding: 0 15px;
+}
 
+@media (min-width: 359px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 521px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 25%;
+    padding: 0 15px;
+  }
+}
 .socials {
   display: flex;
   justify-content: space-evenly;
