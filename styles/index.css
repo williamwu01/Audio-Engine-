@@ -1,23 +1,7 @@
-/* Error: Expected expression.
- *    ,
- * 48 |         grid-column: ;
- *    |                      ^
- *    '
- *   scss\_main.scss 48:16  @use
- *   scss\index.scss 12:1   root stylesheet */
-
-<<<<<<< HEAD
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 48 \2502          grid-column: ;\d\a    \2502                       ^\a    \2575 \a   scss\\_main.scss 48:16  @use\a   scss\\index.scss 12:1   root stylesheet";
+html {
+  box-sizing: border-box;
 }
-=======
+
 * {
   box-sizing: border-box; /*if we add any border or padding does not affect overall*/
   margin: 0;
@@ -299,6 +283,42 @@ main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
 
+.best-sellers div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.best-sellers img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding-right: 1rem;
+}
+.best-sellers p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.best-sellers button {
+  background: #f77d24;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 10px;
+}
+
 .this-is video.source {
   width: 100%;
 }
@@ -352,4 +372,3 @@ footer footer div {
 }
 
 /*# sourceMappingURL=index.css.map */
->>>>>>> 029c66a6b02870f475f3303d3817aa8cd5800cd1
