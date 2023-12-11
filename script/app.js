@@ -8,6 +8,9 @@ toggleEl.addEventListener('click', () => {
 	toggleEl.setAttribute('aria-expanded', String(!isExpanded));
 	// Toggle the class on the #nav_menu element
 	navMenu.classList.toggle('expanded', !isExpanded);
+	toggleEl.classList.toggle('active');
+
+	console.log('Is active:', toggleEl.classList.contains('active'));
 });
 
 let slideIndex = 1;

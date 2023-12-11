@@ -26,70 +26,49 @@ ul > li:hover {
 }
 
 .toggle {
-	width: 2.5rem;
-	height: 0.4rem;
-	position: relative;
+	width: 1.5rem;
+	height: 0.5rem;
+}
 
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		border: 1px solid white;
-		width: 110%;
-		// transition: transform 0.3s ease;
-	}
+.toggle span {
+	display: block;
+	width: 35px;
+	height: 0.2rem;
+	margin: 5px auto;
+	background-color: #ffffff;
+	transition: all 0.3s ease-in-out;
+}
 
-	&::before {
-		top: -13px;
-		right: -0.1rem;
-		height: 0.3rem;
-		background-color: $lite-text;
-	}
+.toggle.active span:nth-child(1) {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-	&::after {
-		top: 8px;
-		right: -0.1rem;
-		height: 0.3rem;
-		background-color: $lite-text;
-	}
+.toggle.active span:nth-child(2) {
+	opacity: 0;
+}
 
-	// &.open {
-	// 	.toggle:before {git
-	// 		transform: rotate(-45deg) translate(-5px, 5px);
-	// 	}
-
-	// 	.toggle:after {
-	// 		transform: rotate(45deg) translate(-5px, -5px);
-	// 	}
-	// }
-
-	// &[aria-expanded='#{$toggle-expanded}'] {
-	// 	.drop-down {
-	// 		display: none;
-	// 	}
-	// }
-	// &[aria-expanded='true'] {
-	// 	.drop-down {
-	// 		display: block;
-	// 	}
-	// }
+.toggle.active span:nth-child(3) {
+	transform: rotate(45deg) translate(-5px, -7px);
 }
 
 .icons {
 	display: flex;
 	flex-wrap: nowrap;
-}
-
-.icons a {
-	width: 2em;
-	display: flex;
-	gap: 0.5rem;
-	margin-top: 1rem;
 	margin-left: 1rem;
+
+	a {
+		width: 1em;
+		display: flex;
+		gap: 0.5rem;
+		margin-top: 1rem;
+		margin-left: 0;
+	}
 }
 
-.icon a:hover {
-	color: red;
+//broken ?
+.icons,
+path:hover {
+	fill: orange;
 }
 
 #nav_menu {
@@ -97,6 +76,6 @@ ul > li:hover {
 	left: 0;
 	background-color: $brand-colors;
 	width: 100%;
-	top: 3rem;
+	top: 3.5rem;
 	padding: 1rem;
 }
