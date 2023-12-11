@@ -6,6 +6,7 @@
  *   scss\_main.scss 48:16  @use
  *   scss\index.scss 12:1   root stylesheet */
 
+<<<<<<< HEAD
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
       "Droid Sans Mono", monospace, monospace;
@@ -16,3 +17,339 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Expected expression.\a    \2577 \a 48 \2502          grid-column: ;\d\a    \2502                       ^\a    \2575 \a   scss\\_main.scss 48:16  @use\a   scss\\index.scss 12:1   root stylesheet";
 }
+=======
+* {
+  box-sizing: border-box; /*if we add any border or padding does not affect overall*/
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  width: 100%;
+}
+
+.drop-down a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  color: white;
+  line-height: 2.8;
+  margin: 1rem;
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+}
+
+ul > li:hover {
+  background-color: rgb(62, 62, 62);
+}
+
+.nav-container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+#nav_menu {
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+}
+
+#nav_menu {
+  height: 0;
+  transition: 0.3s all ease-in;
+}
+#nav_menu.expanded {
+  height: 20rem;
+}
+#nav_menu.li:hover {
+  background-color: darkgrey;
+}
+
+.toggle {
+  width: 1.5rem;
+  height: 0.5rem;
+}
+
+.toggle span {
+  display: block;
+  width: 35px;
+  height: 0.2rem;
+  margin: 5px auto;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 1rem;
+}
+.icons a {
+  width: 1em;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+
+.icons,
+path:hover {
+  fill: orange;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.showcase {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: 0;
+  position: absolute;
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  color: rgb(120, 120, 120);
+}
+@media (min-width: 41rem) {
+  .showcase {
+    width: 400px;
+    height: auto;
+    overflow: auto;
+    right: 0;
+    margin-top: 3rem;
+    background-color: rgba(251, 251, 251, 0.572);
+    padding: 2rem;
+  }
+}
+.showcase > h2 {
+  font-size: 1.5rem;
+  padding: 0;
+  padding-bottom: 2rem;
+  font-weight: 200;
+}
+.showcase > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.showcase > .cta {
+  padding-top: 1rem;
+  background: #f77d24;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+}
+
+/* Hide the images by default */
+.my-slides {
+  display: none;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: 5rem;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /* Position the "next button" to the right */
+}
+.prev.next,
+.next.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* Display dots in a column */
+  margin-top: -2rem;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 0.3rem 0 0.3rem;
+  background-color: rgba(255, 162, 0, 0.5058823529);
+  border-radius: 50%;
+  display: block;
+  transition: background-color 0.6s ease;
+  z-index: 100;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #ee9700;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+main h2 {
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  padding: 2rem 1rem;
+  font-weight: 25;
+  font-size: 2.5rem;
+}
+main p {
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  padding: 1rem;
+  font-weight: 50;
+  font-size: 1.2rem;
+}
+main .shop-sliders img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+main .in-the-news div {
+  padding: 2rem 2rem 1rem;
+}
+
+.this-is video.source {
+  width: 100%;
+}
+
+footer {
+  background-color: #d3d3d3;
+  border-top: 1px solid;
+  padding: 2rem 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+footer footer div {
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 359px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 521px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 25%;
+    padding: 0 15px;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+.socials svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
+>>>>>>> 029c66a6b02870f475f3303d3817aa8cd5800cd1
