@@ -117,6 +117,7 @@ path:hover {
   width: 100%;
   top: 3.5rem;
   padding: 1rem;
+  z-index: 999;
 }
 
 * {
@@ -131,12 +132,39 @@ path:hover {
 }
 
 .showcase {
-  display: none;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: 0;
+  position: absolute;
+}
+@media (min-width: 41rem) {
+  .showcase {
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+    right: 0;
+    margin-top: 3rem;
+  }
+}
+.showcase > h2 {
+  font-size: 1.5rem;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+.showcase > h1 {
+  font-size: 2.5rem;
+}
+.showcase > .cta {
+  padding-top: 1rem;
 }
 
 /* Hide the images by default */
 .my-slides {
   display: none;
+  position: relative;
 }
 
 /* Next & previous buttons */

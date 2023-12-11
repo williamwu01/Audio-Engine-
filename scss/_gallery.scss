@@ -12,13 +12,37 @@
 	margin: auto;
 }
 
+//hides in mobile for screenreaders, displays at around tablet view
 .showcase {
-	display: none;
+	@include visually-hidden;
+
+	@include mq($phoneLandscape) {
+		width: 400px;
+		height: 400px;
+		overflow: auto;
+		right: 0;
+		margin-top: 3rem;
+	}
+
+	& > h2 {
+		font-size: 1.5rem;
+		padding: 0;
+		padding-bottom: 2rem;
+	}
+
+	& > h1 {
+		font-size: 2.5rem;
+	}
+
+	& > .cta {
+		padding-top: 1rem;
+	}
 }
 
 /* Hide the images by default */
 .my-slides {
 	display: none;
+	position: relative;
 }
 
 /* Next & previous buttons */
