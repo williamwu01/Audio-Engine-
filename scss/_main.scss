@@ -31,3 +31,31 @@ main {
 		padding: 2rem 2rem 1rem;
 	}
 }
+
+.best-sellers {
+	
+	button {
+		@include orange-button;
+	}
+
+	div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 25% 25% 25% 25%;
+	}
+
+	// img {
+	// 	grid-column: ;
+	// 	grid-row: ;
+	// }
+
+	// p {
+	// 	grid-column: ;
+	// 	grid-row: ;
+	// }
+	
+	// button {
+	// 	grid-column: ;
+	// 	grid-row: ;
+	// }
+}
