@@ -9,6 +9,10 @@
 	font-family: $font;
 }
 
+.drop-down li {
+	list-style: none;
+}
+
 ul > li:hover {
 	background-color: rgb(62, 62, 62);
 }
@@ -22,20 +26,15 @@ ul > li:hover {
 }
 
 #nav_menu {
-	// position: absolute;
 	left: 0;
 	background-color: $brand-colors;
 	width: 100%;
-	// top: 3.5rem;
-	// padding: 1rem;
-	// z-index: 999;
 }
 
 #nav_menu {
-	// display: none;
+	overflow: hidden;
 	height: 0;
 	transition: 0.3s all ease-in;
-	// z-index: 100;
 
 	&.expanded {
 		// display: block;
@@ -90,4 +89,20 @@ ul > li:hover {
 .icons,
 path:hover {
 	fill: orange;
+}
+
+@include mq($tabletLandscape) {
+	.toggle {
+		display: none;
+	}
+
+	.nav-bar {
+		display: flex;
+		align-items: center;
+	}
+
+	#nav_menu {
+		display: flex;
+		height: auto;
+	}
 }

@@ -49,6 +49,10 @@ header {
   font-family: Tahoma, "Source Sans 3", sans-serif;
 }
 
+.drop-down li {
+  list-style: none;
+}
+
 ul > li:hover {
   background-color: rgb(62, 62, 62);
 }
@@ -68,6 +72,7 @@ ul > li:hover {
 }
 
 #nav_menu {
+  overflow: hidden;
   height: 0;
   transition: 0.3s all ease-in;
 }
@@ -122,6 +127,19 @@ path:hover {
   fill: orange;
 }
 
+@media (min-width: 64rem) {
+  .toggle {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  #nav_menu {
+    display: flex;
+    height: auto;
+  }
+}
 * {
   box-sizing: border-box;
 }
