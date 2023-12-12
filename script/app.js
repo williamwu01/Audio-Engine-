@@ -40,3 +40,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//video controler 
+ const btn = document.querySelector('.play-btn');
+ const videoContainer = document.querySelector('.video-container');
+
+
+ const close = document.querySelector('.close')
+
+ btn.addEventListener('click', ()=>
+ {
+	videoContainer.classList.add('show');
+ })
+
+ close.addEventListener('click', ()=>{
+	videoContainer.classList.remove('show');
+ })
