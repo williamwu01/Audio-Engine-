@@ -50,9 +50,14 @@ function showSlides(n) {
 
  btn.addEventListener('click', ()=>
  {
+	event.preventDefault();
+	console.log('Adding show class');
 	videoContainer.classList.add('show');
- })
+	// videoContainer.style.pointerEvents = 'auto';
+ });
 
  close.addEventListener('click', ()=>{
+	console.log('removed show class');
 	videoContainer.classList.remove('show');
- })
+  // videoContainer.style.pointerEvents = 'none';
+ });
