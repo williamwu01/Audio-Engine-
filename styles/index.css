@@ -387,39 +387,47 @@ main .in-the-news div {
   }
 }
 
+.all-new,
+.feeling-lucky,
+.our-story {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
 .all-new {
-  position: relative;
+  background-image: url("/images/bg-all-new-section-phone-square.jpg");
 }
 
-.all-new > img,
-.all-new > h3,
-.all-new > p,
-.all-new > button {
-  position: absolute;
+.feeling-lucky {
+  background-image: url("/images/bg-feeling-lucky-section-phone-square.jpg");
 }
 
-.all-new > h3,
-.all-new > p,
-.all-new > button {
-  z-index: 1000;
-  margin-left: 1rem;
+.our-story {
+  background-image: url("/images/bg-our-story-section-phone-square.jpg");
 }
 
-.all-new > h3 {
-  top: 1rem;
-  color: white;
-  font-size: 2rem;
-  line-height: 1.4;
+.all-new h3,
+.feeling-lucky h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.all-new > p {
-  top: 2rem;
-  color: white;
-  padding-left: 0;
-  line-height: 2.5;
+.all-new p,
+.feeling-lucky p {
+  margin: 0;
+  font-size: 1em;
 }
 
-.all-new button {
+.all-new button,
+.feeling-lucky button {
   background: #fff;
   display: inline-block;
   color: #000;
@@ -428,61 +436,7 @@ main .in-the-news div {
   font-size: 1em;
   padding: 15px;
   border-radius: 9px;
-  top: 6rem;
   border: none;
-}
-
-.all-new > img {
-  filter: brightness(50%);
-}
-
-.feeling-lucky {
-  position: relative;
-}
-
-.feeling-lucky > img,
-.feeling-lucky > h3,
-.feeling-lucky > p,
-.feeling-lucky > button {
-  position: absolute;
-}
-
-.feeling-lucky > h3,
-.feeling-lucky > p,
-.feeling-lucky > button {
-  z-index: 1000;
-  margin-left: 1rem;
-}
-
-.feeling-lucky > h3 {
-  top: 1rem;
-  color: white;
-  font-size: 2rem;
-  line-height: 1.4;
-}
-
-.feeling-lucky > p {
-  top: 2rem;
-  color: white;
-  padding-left: 0;
-  line-height: 2.5;
-}
-
-.feeling-lucky {
-  background: #fff;
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding: 15px;
-  border-radius: 9px;
-  top: 6rem;
-  border: none;
-}
-
-.feeling-lucky > img {
-  filter: brightness(50%);
 }
 
 .play {

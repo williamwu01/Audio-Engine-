@@ -99,90 +99,98 @@ main {
 	}
 }
 
+// .all-new {
+
+// 	position: relative;
+// }
+
+// .all-new > img,
+// .all-new > h3,
+// .all-new > p, 
+// .all-new > button {
+// 	position: absolute;
+// }
+
+// .all-new > h3,
+// .all-new > p, 
+// .all-new > button {
+// 	z-index: 1000;
+// 	margin-left: 1rem;
+// }
+
+// .all-new > h3 {
+// 	top: 1rem;
+// 	color: $lite-text;
+// 	font-size: 2rem;
+// 	line-height: $line-height;
+// }
+
+// .all-new > p {
+// 	top: 2rem;
+// 	color: $lite-text;
+// 	padding-left: 0;
+// 	line-height: 2.5;
+// }
+
+// .all-new button {
+// 	@include white-button;
+// 	top: 6rem;
+// 	border: none;
+// }
+
+// .all-new > img {
+// 	filter: brightness(50%);
+// }
+
+.all-new,
+.feeling-lucky,
+.our-story {
+	position: relative;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	color: $lite-text;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 20px;
+}
+
 .all-new {
-
-	position: relative;
-}
-
-.all-new > img,
-.all-new > h3,
-.all-new > p, 
-.all-new > button {
-	position: absolute;
-}
-
-.all-new > h3,
-.all-new > p, 
-.all-new > button {
-	z-index: 1000;
-	margin-left: 1rem;
-}
-
-.all-new > h3 {
-	top: 1rem;
-	color: $lite-text;
-	font-size: 2rem;
-	line-height: $line-height;
-}
-
-.all-new > p {
-	top: 2rem;
-	color: $lite-text;
-	padding-left: 0;
-	line-height: 2.5;
-}
-
-.all-new button {
-	@include white-button;
-	top: 6rem;
-	border: none;
-}
-
-.all-new > img {
-	filter: brightness(50%);
+	background-image: url("/images/bg-all-new-section-phone-square.jpg");
 }
 
 .feeling-lucky {
-
-	position: relative;
+	background-image: url("/images/bg-feeling-lucky-section-phone-square.jpg");
 }
 
-.feeling-lucky > img,
-.feeling-lucky > h3,
-.feeling-lucky > p, 
-.feeling-lucky > button {
-	position: absolute;
+.our-story {
+	background-image: url("/images/bg-our-story-section-phone-square.jpg");
 }
 
-.feeling-lucky > h3,
-.feeling-lucky > p, 
-.feeling-lucky > button {
-	z-index: 1000;
-	margin-left: 1rem;
+.all-new h3,
+.feeling-lucky h3 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
 }
 
-.feeling-lucky > h3 {
-	top: 1rem;
-	color: $lite-text;
-	font-size: 2rem;
-	line-height: $line-height;
+.all-new p,
+.feeling-lucky p {
+	margin: 0;
+	font-size: 1em;
 }
 
-.feeling-lucky > p {
-	top: 2rem;
-	color: $lite-text;
-	padding-left: 0;
-	line-height: 2.5;
-}
-
-.feeling-lucky {
+.all-new button,
+.feeling-lucky button {
 	@include white-button;
-	top: 6rem;
 	border: none;
 }
 
-.feeling-lucky > img {
-	filter: brightness(50%);
-}
+// .all-new img,
+// .feeling-lucky img,
+// .our-story img {
+// 	filter: brightness(50%);
+// }
 
 
