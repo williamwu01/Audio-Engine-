@@ -1,3 +1,5 @@
+
+
 const toggleEl = document.querySelector('.toggle');
 const navMenu = document.getElementById('nav_menu');
 
@@ -61,3 +63,5 @@ function showSlides(n) {
 	videoContainer.classList.remove('show');
   // videoContainer.style.pointerEvents = 'none';
  });
+
+
