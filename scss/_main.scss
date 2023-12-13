@@ -102,59 +102,87 @@ main {
 .all-new {
 
 	position: relative;
-
-	div {
-
-		position: relative;
-		width: 45%;
-
-		img {
-			width: 100%;
-			height: auto;
-			filter: brightness(50%);
-		}
-		
-		h3,
-		p,
-		button {
-			position: absolute;
-			top: 50%;;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			color: purple;
-		}
-	
-		// p {
-		// 	position: absolute;
-		// 	z-index: 1000;
-		// }
-	
-		// button {
-		// 	position: absolute;
-		// 	@include white-button;
-		// 	z-index: 1000;
-		// 	top: 3rem;
-		// }	
-	}
 }
 
-// .feeling-lucky {
-	
-// 	img {
-// 		position: relative;
-// 	}
-	
-// 	h3 {
-// 		position: absolute;
-// 	}
+.all-new > img,
+.all-new > h3,
+.all-new > p, 
+.all-new > button {
+	position: absolute;
+}
 
-// 	p {
-// 		position: absolute;
-// 	}
+.all-new > h3,
+.all-new > p, 
+.all-new > button {
+	z-index: 1000;
+	margin-left: 1rem;
+}
 
-// 	button {
-// 		position: absolute;
-// 		@include white-button;
-// 	}
-// }
+.all-new > h3 {
+	top: 1rem;
+	color: $lite-text;
+	font-size: 2rem;
+	line-height: $line-height;
+}
+
+.all-new > p {
+	top: 2rem;
+	color: $lite-text;
+	padding-left: 0;
+	line-height: 2.5;
+}
+
+.all-new button {
+	@include white-button;
+	top: 6rem;
+	border: none;
+}
+
+.all-new > img {
+	filter: brightness(50%);
+}
+
+.feeling-lucky {
+
+	position: relative;
+}
+
+.feeling-lucky > img,
+.feeling-lucky > h3,
+.feeling-lucky > p, 
+.feeling-lucky > button {
+	position: absolute;
+}
+
+.feeling-lucky > h3,
+.feeling-lucky > p, 
+.feeling-lucky > button {
+	z-index: 1000;
+	margin-left: 1rem;
+}
+
+.feeling-lucky > h3 {
+	top: 1rem;
+	color: $lite-text;
+	font-size: 2rem;
+	line-height: $line-height;
+}
+
+.feeling-lucky > p {
+	top: 2rem;
+	color: $lite-text;
+	padding-left: 0;
+	line-height: 2.5;
+}
+
+.feeling-lucky {
+	@include white-button;
+	top: 6rem;
+	border: none;
+}
+
+.feeling-lucky > img {
+	filter: brightness(50%);
+}
+
 

@@ -390,23 +390,99 @@ main .in-the-news div {
 .all-new {
   position: relative;
 }
-.all-new div {
-  position: relative;
-  width: 45%;
+
+.all-new > img,
+.all-new > h3,
+.all-new > p,
+.all-new > button {
+  position: absolute;
 }
-.all-new div img {
-  width: 100%;
-  height: auto;
+
+.all-new > h3,
+.all-new > p,
+.all-new > button {
+  z-index: 1000;
+  margin-left: 1rem;
+}
+
+.all-new > h3 {
+  top: 1rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.all-new > p {
+  top: 2rem;
+  color: white;
+  padding-left: 0;
+  line-height: 2.5;
+}
+
+.all-new button {
+  background: #fff;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  top: 6rem;
+  border: none;
+}
+
+.all-new > img {
   filter: brightness(50%);
 }
-.all-new div h3,
-.all-new div p,
-.all-new div button {
+
+.feeling-lucky {
+  position: relative;
+}
+
+.feeling-lucky > img,
+.feeling-lucky > h3,
+.feeling-lucky > p,
+.feeling-lucky > button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: purple;
+}
+
+.feeling-lucky > h3,
+.feeling-lucky > p,
+.feeling-lucky > button {
+  z-index: 1000;
+  margin-left: 1rem;
+}
+
+.feeling-lucky > h3 {
+  top: 1rem;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.feeling-lucky > p {
+  top: 2rem;
+  color: white;
+  padding-left: 0;
+  line-height: 2.5;
+}
+
+.feeling-lucky {
+  background: #fff;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  top: 6rem;
+  border: none;
+}
+
+.feeling-lucky > img {
+  filter: brightness(50%);
 }
 
 .play {
