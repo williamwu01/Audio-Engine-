@@ -316,6 +316,7 @@ main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
 
+/* BEST SELLERS */
 @media (min-width: 20rem) {
   .best-sellers div {
     padding: 0 1rem;
@@ -387,6 +388,7 @@ main .in-the-news div {
   }
 }
 
+/* ALL NEW - FEELING LUCKY - OUR STORY */
 .all-new,
 .feeling-lucky,
 .our-story {
@@ -400,6 +402,7 @@ main .in-the-news div {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
 .all-new {
@@ -416,14 +419,17 @@ main .in-the-news div {
 
 .all-new h3,
 .feeling-lucky h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 .all-new p,
 .feeling-lucky p {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.15em;
+  padding-left: 0;
+  padding-top: 0;
+  font-weight: lighter;
 }
 
 .all-new button,
@@ -439,12 +445,43 @@ main .in-the-news div {
   border: none;
 }
 
+.our-story h3 {
+  font-size: 2em;
+  font-weight: 550;
+  margin: 0 auto;
+}
+
+.our-story p {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1em;
+  padding: 0;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}
+
+.our-story button {
+  background: #f77d24;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
 .all-new img,
 .feeling-lucky img,
 .our-story img {
   display: none;
 }
 
+/* MEDIA QUERY */
 @media (min-width: 32.2rem) {
   .all-new {
     background-image: url("/images/bg-all-new-section.jpg");
@@ -456,6 +493,11 @@ main .in-the-news div {
     background-image: url("/images/bg-our-story-section-tablet.jpg");
   }
 }
+/* IN THE NEWS */
+.in-the-news h2 {
+  text-align: center;
+}
+
 .play {
   position: relative;
 }
