@@ -3,6 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+	integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+	/>
 	<link rel="stylesheet" href="/styles/index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,57 +171,63 @@
 			</div>
 		</section>
 
-		<section class="shop-sliders">
+		<section>
 			
 			<h2>SHOP BY ROOM OR DEVICE</h2>
-			
-			<div>
-				<img src="/images/shop-slider-01-speaker-white.jpg" alt="A white speaker on a desk.">
 
-				<h3>WITH SONOS</h3>
-			</div>
+			<svg class="shop-prev" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="rgba(247,125,36,1)"></path></svg>
 
-			<div>
-				<img src="/images/shop-slider-02-speaker-brown.jpg" alt="A brown speaker on a counter.">
+				<div class="shop-sliders">
+					<div>
+						<img src="/images/shop-slider-01-speaker-white.jpg" alt="A white speaker on a desk.">
 
-				<h3>WITH SIRI</h3>
-			</div>
+						<h3>WITH SONOS</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-03-speakers-brown.jpg" alt="A large brown speaker on a desk.">
+					<div>
+						<img src="/images/shop-slider-02-speaker-brown.jpg" alt="A brown speaker on a counter.">
 
-				<h3>WITH A TURNTABLE</h3>
-			</div>
+						<h3>WITH SIRI</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-04-speakers-brown.jpg" alt="A large brown speaker on a computer desk.">
+					<div>
+						<img src="/images/shop-slider-03-speakers-brown.jpg" alt="A large brown speaker on a desk.">
 
-				<h3>WITH TV ROOM</h3>
-			</div>
+						<h3>WITH A TURNTABLE</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-05-speakers-brown.jpg" alt="A pair of brown speakers on a counter.">
+					<div>
+						<img src="/images/shop-slider-04-speakers-brown.jpg" alt="A large brown speaker on a computer desk.">
 
-				<h3>KITCHEN</h3>
-			</div>
+						<h3>WITH TV ROOM</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-06-speaker-brown.jpg" alt="A long brown speaker on a table.">
+					<div>
+						<img src="/images/shop-slider-05-speakers-brown.jpg" alt="A pair of brown speakers on a counter.">
 
-				<h3>PATIO</h3>
-			</div>
+						<h3>KITCHEN</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-07-speakers-white.jpg" alt="A pair of white computer speakers.">
+					<div>
+						<img src="/images/shop-slider-06-speaker-brown.jpg" alt="A long brown speaker on a table.">
 
-				<h3>OFFICE</h3>
-			</div>
+						<h3>PATIO</h3>
+					</div>
 
-			<div>
-				<img src="/images/shop-slider-08-speakers-white.jpg" alt="A pair of white speakers near windows.">
+					<div>
+						<img src="/images/shop-slider-07-speakers-white.jpg" alt="A pair of white computer speakers.">
 
-				<h3>BEDROOM</h3>
-			</div>
+						<h3>OFFICE</h3>
+					</div>
+
+					<div>
+						<img src="/images/shop-slider-08-speakers-white.jpg" alt="A pair of white speakers near windows.">
+
+						<h3>BEDROOM</h3>
+					</div>
+				</div>
+
+				<svg class="shop-next" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="rgba(247,125,36,1)"></path></svg>
 		</section>
 
 		<section class="all-new">
@@ -250,46 +263,53 @@
 		<section class="in-the-news">
 			
 			<h2>IN THE NEWS</h2>
-			
-			<div>
-				<img src="/images/in-the-news-slider-01-rolling-stone.jpg" alt="Rolling Stone logo">
+
+			<svg class="news-prev" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="rgba(247,125,36,1)"></path></svg>
+
+			<div class="news-sliders">
+				<div>
+					<img src="/images/in-the-news-slider-01-rolling-stone.jpg" alt="Rolling Stone logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-02-mens-health.jpg" alt="Men's Health logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-03-forbes-life.jpg" alt="Forbes Life logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-04-chicago-tribune.jpg" alt="Chicago Tribune logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-05-gear-patrol.jpg" alt="Gear Patrol logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-06-sound-guys.jpg" alt="Sound Guys logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-07-wired.jpg" alt="Wired logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-08-cnet.jpg" alt="Cnet logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-09-gq.jpg" alt="GQ logo">
+				</div>
+
+				<div>
+					<img src="/images/in-the-news-slider-10-pc-magazine.jpg" alt="PC Magazine logo">
+				</div>
 			</div>
 
-			<div>
-				<img src="/images/in-the-news-slider-02-mens-health.jpg" alt="Men's Health logo">
-			</div>
+			<svg class="news-next" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="rgba(247,125,36,1)"></path></svg>
 
-			<div>
-				<img src="/images/in-the-news-slider-03-forbes-life.jpg" alt="Forbes Life logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-04-chicago-tribune.jpg" alt="Chicago Tribune logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-05-gear-patrol.jpg" alt="Gear Patrol logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-06-sound-guys.jpg" alt="Sound Guys logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-07-wired.jpg" alt="Wired logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-08-cnet.jpg" alt="Cnet logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-09-gq.jpg" alt="GQ logo">
-			</div>
-
-			<div>
-				<img src="/images/in-the-news-slider-10-pc-magazine.jpg" alt="PC Magazine logo">
-			</div>
 		</section>
 
 		<section class="this-is">
@@ -359,5 +379,9 @@
 			<a href="#">News</a>
 		  </div>
 	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

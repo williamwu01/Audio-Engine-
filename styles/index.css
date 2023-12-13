@@ -312,12 +312,6 @@ main h2 {
 main p {
   padding: 1rem;
 }
-main .shop-sliders img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  filter: brightness(50%);
-}
 main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
@@ -521,6 +515,13 @@ footer footer div {
 
 .in-the-news div {
   padding: 2rem 2rem 1rem;
+}
+
+.shop-sliders img {
+  border-radius: 50%;
+  height: 100%;
+  width: 80%;
+  filter: brightness(50%);
 }
 
 /*# sourceMappingURL=index.css.map */
