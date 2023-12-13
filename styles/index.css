@@ -547,14 +547,15 @@ footer footer div {
   position: relative;
 }
 
-.text {
+.shop-text {
   position: absolute;
-  top: 30%;
   width: 100px;
-  left: 12%;
   font-weight: 500;
   font-size: 1.2rem;
   text-align: center;
+  top: 54%;
+  left: 44%;
+  transform: translate(-50%, -50%);
 }
 
 .shop-prev,
