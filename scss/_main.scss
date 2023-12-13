@@ -7,7 +7,6 @@ body {
 }
 
 main {
-
 	background-color: white;
 	a {
 		@include styleless-links;
@@ -21,13 +20,6 @@ main {
 		padding: 1rem;
 	}
 
-	.shop-sliders img {
-		border-radius: 50%;
-		height: 100%;
-		width: 100%;
-		filter: brightness(50%);
-	}
-
 	.in-the-news div {
 		padding: 2rem 2rem 1rem;
 	}
@@ -35,33 +27,32 @@ main {
 
 //@media (min-width: 478px) {
 
-	// .best-sellers h2 {
-	// 	text-align: center;
-	// }
+// .best-sellers h2 {
+// 	text-align: center;
+// }
 
-	// .bs-cta-wrapper {
-	// 	display: flex;
-	// }
+// .bs-cta-wrapper {
+// 	display: flex;
+// }
 
-	// .bs-cta {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	align-content: flex-end;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// 	padding-top: 2rem;
-	// 	padding-left: 3rem;
-	// 	padding-right: 3rem;
-	// }
+// .bs-cta {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	align-content: flex-end;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding-top: 2rem;
+// 	padding-left: 3rem;
+// 	padding-right: 3rem;
+// }
 
-	// .best-sellers button {
-	// 	@include orange-button;
-	// }
+// .best-sellers button {
+// 	@include orange-button;
+// }
 //}
 
 .best-sellers {
 	@include mq($phonePortrait) {
-
 		div {
 			padding: 0 1rem;
 			display: inline-grid;
@@ -76,14 +67,14 @@ main {
 			grid-row-end: 4;
 			padding-right: 1rem;
 		}
-	
+
 		p {
 			grid-column-start: 1;
 			grid-column-end: 3;
 			grid-row-start: 1;
 			grid-row-end: 2;
 		}
-		
+
 		button {
 			@include orange-button;
 			border: none;
@@ -96,7 +87,6 @@ main {
 	}
 
 	@include mq($break-point-1) {
-
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 25% 75%;
