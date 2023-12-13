@@ -1,3 +1,22 @@
+$(document).ready(function() {
+	// Check if the viewport width is greater than or equal to 515 pixels
+	if ($(window).width() >= 515) {
+			// Initialize Slick slider
+			$('.shop-sliders').slick({
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					responsive: [
+							{
+									breakpoint: 826,
+									settings: {
+											slidesToShow: 3,
+											slidesToScroll: 1,
+									}
+							}
+					]
+			});
+	}
+});
 
 
 const toggleEl = document.querySelector('.toggle');

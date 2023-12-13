@@ -549,7 +549,11 @@ footer footer div {
 .shop-sliders img {
   border-radius: 50%;
   height: 100%;
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 80%;
+>>>>>>> 3c0a47a685e589da8328adf8e44c75332d81a61d
   filter: brightness(50%);
 }
 
