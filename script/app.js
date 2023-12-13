@@ -44,7 +44,7 @@ $(function() {
 	function handleSlick() {
 			const windowWidth = $(window).width();
 
-			if (windowWidth >= 500) {
+			if (windowWidth >= 400) {
 					// Initialize Slick slider if it's not initialized
 					if (!$('.news-sliders').hasClass('slick-initialized')) {
 							$('.news-sliders').slick({
