@@ -1,21 +1,104 @@
-$(document).ready(function() {
-	// Check if the viewport width is greater than or equal to 515 pixels
-	if ($(window).width() >= 515) {
-			// Initialize Slick slider
-			$('.shop-sliders').slick({
-					slidesToShow: 4,
-					slidesToScroll: 1,
-					responsive: [
-							{
-									breakpoint: 826,
-									settings: {
-											slidesToShow: 3,
-											slidesToScroll: 1,
-									}
-							}
-					]
-			});
+$(function() {
+	// Function to handle Slick initialization or destruction based on window width
+	function handleSlick() {
+			const windowWidth = $(window).width();
+
+			if (windowWidth >= 515) {
+					// Initialize Slick slider if it's not initialized
+					if (!$('.shop-sliders').hasClass('slick-initialized')) {
+							$('.shop-sliders').slick({
+									slidesToShow: 4,
+									slidesToScroll: 1,
+									responsive: [
+											{
+													breakpoint: 826,
+													settings: {
+															slidesToShow: 3,
+															slidesToScroll: 1,
+													}
+											}
+									],
+									prevArrow: $('.shop-prev'),
+									nextArrow: $('.shop-next')
+							});
+					}
+			} else {
+					// Check if the slider is initialized before unslicking
+					if ($('.shop-sliders').hasClass('slick-initialized')) {
+							$('.shop-sliders').slick('unslick');
+					}
+			}
 	}
+
+	// Initial check on document ready
+	handleSlick();
+
+	// Check window size on resize
+	$(window).resize(function() {
+			handleSlick();
+	});
+});
+
+$(function() {
+	// Function to handle Slick initialization or destruction based on window width
+	function handleSlick() {
+			const windowWidth = $(window).width();
+
+			if (windowWidth >= 500) {
+					// Initialize Slick slider if it's not initialized
+					if (!$('.news-sliders').hasClass('slick-initialized')) {
+							$('.news-sliders').slick({
+								slidesToShow: 5,
+								slidesToScroll: 1,
+								responsive: [
+										{
+												breakpoint: 1268,
+												settings: {
+														slidesToShow: 5,
+														slidesToScroll: 1,
+												}
+										},
+										{
+												breakpoint: 826,
+												settings: {
+														slidesToShow: 4,
+														slidesToScroll: 1,
+												}
+										},
+										{
+												breakpoint: 600,
+												settings: {
+														slidesToShow: 3,
+														slidesToScroll: 1,
+												}
+										},
+										{
+												breakpoint: 500,
+												settings: {
+														slidesToShow: 2,
+														slidesToScroll: 1,
+												}
+										}
+								],
+								prevArrow: $('.news-prev'),
+								nextArrow: $('.news-next')
+						});
+					}
+			} else {
+					// Check if the slider is initialized before unslicking
+					if ($('.news-sliders').hasClass('slick-initialized')) {
+							$('.news-sliders').slick('unslick');
+					}
+			}
+	}
+
+	// Initial check on document ready
+	handleSlick();
+
+	// Check window size on resize
+	$(window).resize(function() {
+			handleSlick();
+	});
 });
 
 

@@ -4,6 +4,34 @@
 .shop-sliders img {
 	border-radius: 50%;
 	height: 100%;
-	width: 80%;
+	width: 90%;
 	filter: brightness(50%);
+	display: gird;
+}
+
+.shop-sliders div {
+	position: relative;
+}
+
+.text {
+	position: absolute;
+	top: 30%;
+	width: 100px;
+	left: 12%;
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.shop-prev,
+.shop-next {
+	display: none;
+}
+
+.shop-sliders {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 1rem;
+	margin-bottom: 3rem;
 }
