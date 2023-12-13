@@ -1,23 +1,24 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+body {
+	max-width: 1440px;
+	background-color: black;
+}
+
 main {
+
+	background-color: white;
 	a {
 		@include styleless-links;
 	}
 
 	h2 {
-		font-family: $font;
 		padding: 2rem 1rem;
-		font-weight: 25;
-		font-size: 2.5rem;
 	}
 
 	p {
-		font-family: $font;
 		padding: 1rem;
-		font-weight: 50;
-		font-size: 1.2rem;
 	}
 
 	.shop-sliders img {
@@ -32,13 +33,38 @@ main {
 	}
 }
 
-@media (max-width: 477px) {
-	.best-sellers {
-		
-		.bs-cta {
-			padding-left: 1rem;
-			padding-right: 1rem;
-			display: grid;
+//@media (min-width: 478px) {
+
+	// .best-sellers h2 {
+	// 	text-align: center;
+	// }
+
+	// .bs-cta-wrapper {
+	// 	display: flex;
+	// }
+
+	// .bs-cta {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	align-content: flex-end;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	padding-top: 2rem;
+	// 	padding-left: 3rem;
+	// 	padding-right: 3rem;
+	// }
+
+	// .best-sellers button {
+	// 	@include orange-button;
+	// }
+//}
+
+.best-sellers {
+	@include mq($phonePortrait) {
+
+		div {
+			padding: 0 1rem;
+			display: inline-grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 25% 25% 25% 25%;
 		}
@@ -50,7 +76,7 @@ main {
 			grid-row-end: 4;
 			padding-right: 1rem;
 		}
-
+	
 		p {
 			grid-column-start: 1;
 			grid-column-end: 3;
@@ -60,6 +86,7 @@ main {
 		
 		button {
 			@include orange-button;
+			border: none;
 			grid-column-start: 2;
 			grid-column-end: 3;
 			grid-row-start: 3;
@@ -67,30 +94,45 @@ main {
 			padding: 10px;
 		}
 	}
-}
 
-@media (min-width: 478px) {
+	@include mq($break-point-1) {
 
-	.best-sellers h2 {
-		text-align: center;
-	}
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 25% 75%;
 
-	.bs-cta-wrapper {
-		display: flex;
-	}
+		h2 {
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			text-align: center;
+		}
 
-	.bs-cta {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: flex-end;
-		justify-content: center;
-		align-items: center;
-		padding-top: 2rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: bottom;
+			justify-content: center;
+			align-items: flex-end;
+		}
 
-	button {
-		@include orange-button;
+		p {
+			// order: -1;
+			// flex: 0 100%;
+			text-align: center;
+		}
+
+		img {
+			// width: 50%;
+			width: max-content;
+			height: max-content;
+		}
+
+		button {
+			width: max-content;
+			height: max-content;
+		}
 	}
 }

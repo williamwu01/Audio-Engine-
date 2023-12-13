@@ -29,6 +29,26 @@ body {
   margin: 0;
 }
 
+body {
+  font-family: Tahoma, "Source Sans 3", sans-serif;
+  line-height: 1.4;
+  color: black;
+}
+
+h2 {
+  font-weight: 25;
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: 50;
+  font-size: 1.2rem;
+}
+
+.best-sellers p {
+  text-align: left;
+}
+
 header {
   background-color: #000000;
   display: flex;
@@ -273,22 +293,24 @@ path:hover {
     opacity: 1;
   }
 }
+body {
+  max-width: 1440px;
+  background-color: black;
+}
+
+main {
+  background-color: white;
+}
 main a {
   text-decoration: none;
   color: inherit;
   list-style: none;
 }
 main h2 {
-  font-family: Tahoma, "Source Sans 3", sans-serif;
   padding: 2rem 1rem;
-  font-weight: 25;
-  font-size: 2.5rem;
 }
 main p {
-  font-family: Tahoma, "Source Sans 3", sans-serif;
   padding: 1rem;
-  font-weight: 50;
-  font-size: 1.2rem;
 }
 main .shop-sliders img {
   border-radius: 50%;
@@ -300,11 +322,10 @@ main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
 
-@media (max-width: 477px) {
-  .best-sellers .bs-cta {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: grid;
+@media (min-width: 20rem) {
+  .best-sellers div {
+    padding: 0 1rem;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25% 25% 25% 25%;
   }
@@ -330,6 +351,7 @@ main .in-the-news div {
     font-size: 1em;
     padding: 15px;
     border-radius: 9px;
+    border: none;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -337,34 +359,40 @@ main .in-the-news div {
     padding: 10px;
   }
 }
-@media (min-width: 478px) {
+@media (min-width: 29.5rem) {
+  .best-sellers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 75%;
+  }
   .best-sellers h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: center;
   }
-  .bs-cta-wrapper {
-    display: flex;
-  }
-  .bs-cta {
+  .best-sellers div {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    flex-direction: row;
+    align-items: bottom;
     justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    align-items: flex-end;
   }
-  button {
-    background: #f77d24;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 15px;
-    border-radius: 9px;
+  .best-sellers p {
+    text-align: center;
+  }
+  .best-sellers img {
+    width: max-content;
+    height: max-content;
+  }
+  .best-sellers button {
+    width: max-content;
+    height: max-content;
   }
 }
+
 .play {
   position: relative;
 }
