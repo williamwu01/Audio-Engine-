@@ -312,12 +312,6 @@ main h2 {
 main p {
   padding: 1rem;
 }
-main .shop-sliders img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  filter: brightness(50%);
-}
 main .in-the-news div {
   padding: 2rem 2rem 1rem;
 }
@@ -391,6 +385,35 @@ main .in-the-news div {
     width: max-content;
     height: max-content;
   }
+}
+
+.all-new img {
+  position: absolute;
+  filter: brightness(50%);
+}
+.all-new h3 {
+  position: relative;
+  padding-left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  color: purple;
+}
+.all-new p {
+  position: absolute;
+  z-index: 1000;
+}
+.all-new button {
+  position: relative;
+  background: #fff;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  z-index: 1000;
+  top: 3rem;
 }
 
 .play {
@@ -521,6 +544,13 @@ footer footer div {
 
 .in-the-news div {
   padding: 2rem 2rem 1rem;
+}
+
+.shop-sliders img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
 }
 
 /*# sourceMappingURL=index.css.map */
