@@ -99,66 +99,28 @@ main {
 	}
 }
 
-// .all-new {
-
-// 	position: relative;
-// }
-
-// .all-new > img,
-// .all-new > h3,
-// .all-new > p, 
-// .all-new > button {
-// 	position: absolute;
-// }
-
-// .all-new > h3,
-// .all-new > p, 
-// .all-new > button {
-// 	z-index: 1000;
-// 	margin-left: 1rem;
-// }
-
-// .all-new > h3 {
-// 	top: 1rem;
-// 	color: $lite-text;
-// 	font-size: 2rem;
-// 	line-height: $line-height;
-// }
-
-// .all-new > p {
-// 	top: 2rem;
-// 	color: $lite-text;
-// 	padding-left: 0;
-// 	line-height: 2.5;
-// }
-
-// .all-new button {
-// 	@include white-button;
-// 	top: 6rem;
-// 	border: none;
-// }
-
-// .all-new > img {
-// 	filter: brightness(50%);
-// }
-
 .all-new,
 .feeling-lucky,
 .our-story {
 	position: relative;
-	height: 400px;
+	height: 350px;
 	background-size: cover;
 	background-position: center;
 	color: $lite-text;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
 	padding: 20px;
+
+	// image {
+	// 	filter: brightness(50%);
+	// }
 }
 
 .all-new {
 	background-image: url("/images/bg-all-new-section-phone-square.jpg");
+	// background-blend-mode: darken;
 }
 
 .feeling-lucky {
@@ -187,10 +149,27 @@ main {
 	border: none;
 }
 
-// .all-new img,
-// .feeling-lucky img,
-// .our-story img {
-// 	filter: brightness(50%);
-// }
+.all-new img,
+.feeling-lucky img,
+.our-story img {
+	// filter: brightness(50%);
+	display: none;
+}
+
+@include mq($slider-slick) {
+	
+	.all-new {
+		background-image: url("/images/bg-all-new-section.jpg");
+		// backdrop-filter: brightness(50%);
+	}
+	
+	.feeling-lucky {
+		background-image: url("/images/bg-feeling-lucky-section.jpg");
+	}
+	
+	.our-story {
+		background-image: url("/images/bg-our-story-section-tablet.jpg");
+	}
+}
 
 

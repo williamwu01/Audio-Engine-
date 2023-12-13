@@ -391,13 +391,13 @@ main .in-the-news div {
 .feeling-lucky,
 .our-story {
   position: relative;
-  height: 400px;
+  height: 350px;
   background-size: cover;
   background-position: center;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
 }
@@ -439,6 +439,23 @@ main .in-the-news div {
   border: none;
 }
 
+.all-new img,
+.feeling-lucky img,
+.our-story img {
+  display: none;
+}
+
+@media (min-width: 32.2rem) {
+  .all-new {
+    background-image: url("/images/bg-all-new-section.jpg");
+  }
+  .feeling-lucky {
+    background-image: url("/images/bg-feeling-lucky-section.jpg");
+  }
+  .our-story {
+    background-image: url("/images/bg-our-story-section-tablet.jpg");
+  }
+}
 .play {
   position: relative;
 }
