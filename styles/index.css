@@ -387,6 +387,35 @@ main .in-the-news div {
   }
 }
 
+.all-new img {
+  position: absolute;
+  filter: brightness(50%);
+}
+.all-new h3 {
+  position: relative;
+  padding-left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  color: purple;
+}
+.all-new p {
+  position: absolute;
+  z-index: 1000;
+}
+.all-new button {
+  position: relative;
+  background: #fff;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 9px;
+  z-index: 1000;
+  top: 3rem;
+}
+
 .play {
   position: relative;
 }
@@ -516,7 +545,15 @@ footer footer div {
 .shop-sliders img {
   border-radius: 50%;
   height: 100%;
+<<<<<<< HEAD
   width: 90%;
+=======
+<<<<<<< HEAD
+  width: 100%;
+=======
+  width: 80%;
+>>>>>>> 3c0a47a685e589da8328adf8e44c75332d81a61d
+>>>>>>> 84d0d5a689a50d5e876ff1c48b7c37e4435d02ae
   filter: brightness(50%);
   display: gird;
 }

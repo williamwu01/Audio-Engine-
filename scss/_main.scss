@@ -25,33 +25,8 @@ main {
 	}
 }
 
-//@media (min-width: 478px) {
-
-// .best-sellers h2 {
-// 	text-align: center;
-// }
-
-// .bs-cta-wrapper {
-// 	display: flex;
-// }
-
-// .bs-cta {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	align-content: flex-end;
-// 	justify-content: center;
-// 	align-items: center;
-// 	padding-top: 2rem;
-// 	padding-left: 3rem;
-// 	padding-right: 3rem;
-// }
-
-// .best-sellers button {
-// 	@include orange-button;
-// }
-//}
-
 .best-sellers {
+
 	@include mq($phonePortrait) {
 		div {
 			padding: 0 1rem;
@@ -109,13 +84,10 @@ main {
 		}
 
 		p {
-			// order: -1;
-			// flex: 0 100%;
 			text-align: center;
 		}
 
 		img {
-			// width: 50%;
 			width: max-content;
 			height: max-content;
 		}
@@ -126,3 +98,53 @@ main {
 		}
 	}
 }
+
+.all-new {
+
+	img {
+		position: absolute;
+		filter: brightness(50%);
+	}
+	
+	h3 {
+		position: relative;
+		padding-left: 1rem;
+		top: 1rem;
+		
+		z-index: 1000;
+		color: purple;
+	}
+
+	p {
+		position: absolute;
+		z-index: 1000;
+	}
+
+	button {
+		position: relative;
+		@include white-button;
+		z-index: 1000;
+		top: 3rem;
+	}
+}
+
+// .feeling-lucky {
+	
+// 	img {
+// 		position: relative;
+// 	}
+	
+// 	h3 {
+// 		position: absolute;
+// 	}
+
+// 	p {
+// 		position: absolute;
+// 	}
+
+// 	button {
+// 		position: absolute;
+// 		@include white-button;
+// 	}
+// }
+
