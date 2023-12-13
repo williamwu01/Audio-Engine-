@@ -15,6 +15,7 @@
 
 .shop-text {
 	position: absolute;
+	color: white;
 	width: 100px;
 	font-weight: 500;
 	font-size: 1.2rem;
@@ -27,6 +28,18 @@
 .shop-prev,
 .shop-next {
 	display: none;
+	width: 3rem;
+	position: absolute;
+	z-index: 9999;
+	top: 69%;
+}
+
+.shop-prev {
+	left: 0;
+}
+
+.shop-next {
+	right: 0;
 }
 
 .shop-sliders {
@@ -35,7 +48,14 @@
 	grid-template-rows: repeat(4, 1fr);
 	gap: 1rem;
 	margin-bottom: 3rem;
+}
 
-	// @include mq() {
-	// }
+section:nth-child(3) {
+	position: relative;
+}
+
+.shop-sliders {
+	@include mq($slider-slick) {
+		display: flex;
+	}
 }

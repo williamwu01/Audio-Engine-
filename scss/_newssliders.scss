@@ -1,6 +1,23 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-// .in-the-news div {
-// 	padding: 2rem 2rem 1rem;
-// }
+.news-prev,
+.news-next {
+	display: none;
+	width: 3rem;
+	position: absolute;
+	z-index: 9999;
+	top: 69%;
+}
+
+.news-prev {
+	left: 0;
+}
+
+.news-next {
+	right: 0;
+}
+
+section:nth-child(7) {
+	position: relative;
+}
