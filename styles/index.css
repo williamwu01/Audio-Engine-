@@ -296,6 +296,7 @@ path:hover {
 body {
   max-width: 1440px;
   background-color: black;
+  margin: 0 auto;
 }
 
 main {
@@ -475,8 +476,7 @@ main .in-the-news div {
 /* MEDIA QUERY */
 @media (min-width: 32.2rem) {
   .all-new,
-  .feeling-lucky,
-  .our-story {
+  .feeling-lucky {
     position: relative;
     height: 350px;
     background-size: cover;
@@ -488,6 +488,20 @@ main .in-the-news div {
     align-items: flex-end;
     padding: 20px;
     box-shadow: none;
+    top: 0px;
+    left: 0px;
+  }
+  .our-story {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
   }
   .all-new {
     background-image: url("/images/bg-all-new-section.jpg");
@@ -528,6 +542,23 @@ main .in-the-news div {
   .our-story p {
     text-align: center;
     padding: 0 10rem;
+  }
+}
+@media (min-width: 47rem) {
+  .our-story {
+    box-shadow: none;
+  }
+  .our-story h3 {
+    font-size: 3.5em;
+  }
+  .our-story p {
+    font-size: 1.5em;
+    font-style: normal;
+  }
+}
+@media (min-width: 64rem) {
+  .our-story {
+    background-image: url("/images/bg-our-story-section.jpg");
   }
 }
 /* IN THE NEWS */
