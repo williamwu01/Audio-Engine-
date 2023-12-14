@@ -389,100 +389,106 @@ main .in-the-news div {
 }
 
 /* ALL NEW - FEELING LUCKY - OUR STORY */
-.all-new,
-.feeling-lucky,
-.our-story {
-  position: relative;
-  height: 350px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 20px;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+@media (min-width: 20rem) {
+  .all-new,
+  .feeling-lucky,
+  .our-story {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  }
+  .all-new {
+    background-image: url("/images/bg-all-new-section-phone-square.jpg");
+  }
+  .feeling-lucky {
+    background-image: url("/images/bg-feeling-lucky-section-phone-square.jpg");
+  }
+  .our-story {
+    background-image: url("/images/bg-our-story-section-phone-square.jpg");
+  }
+  .all-new h3,
+  .feeling-lucky h3 {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  .all-new p,
+  .feeling-lucky p {
+    margin: 0;
+    font-size: 1.15em;
+    padding-left: 0;
+    padding-top: 0;
+    font-weight: lighter;
+  }
+  .all-new button,
+  .feeling-lucky button {
+    background: #fff;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 9px;
+    border: none;
+  }
+  .our-story h3 {
+    font-size: 2em;
+    font-weight: 550;
+    margin: 0 auto;
+  }
+  .our-story p {
+    margin: 0;
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+  }
+  .our-story button {
+    background: #f77d24;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 9px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .all-new img,
+  .feeling-lucky img,
+  .our-story img {
+    display: none;
+  }
 }
-
-.all-new {
-  background-image: url("/images/bg-all-new-section-phone-square.jpg");
-}
-
-.feeling-lucky {
-  background-image: url("/images/bg-feeling-lucky-section-phone-square.jpg");
-}
-
-.our-story {
-  background-image: url("/images/bg-our-story-section-phone-square.jpg");
-}
-
-.all-new h3,
-.feeling-lucky h3 {
-  font-size: 2em;
-  font-weight: lighter;
-}
-
-.all-new p,
-.feeling-lucky p {
-  margin: 0;
-  font-size: 1.15em;
-  padding-left: 0;
-  padding-top: 0;
-  font-weight: lighter;
-}
-
-.all-new button,
-.feeling-lucky button {
-  background: #fff;
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding: 15px;
-  border-radius: 9px;
-  border: none;
-}
-
-.our-story h3 {
-  font-size: 2em;
-  font-weight: 550;
-  margin: 0 auto;
-}
-
-.our-story p {
-  margin: 0;
-  margin-top: 1em;
-  font-size: 1em;
-  padding: 0;
-  font-weight: lighter;
-  font-style: italic;
-  text-align: center;
-}
-
-.our-story button {
-  background: #f77d24;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding: 15px;
-  border-radius: 9px;
-  border: none;
-  margin: 0 auto;
-  margin-top: 2rem;
-}
-
-.all-new img,
-.feeling-lucky img,
-.our-story img {
-  display: none;
-}
-
 /* MEDIA QUERY */
 @media (min-width: 32.2rem) {
+  .all-new,
+  .feeling-lucky,
+  .our-story {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    box-shadow: none;
+  }
   .all-new {
     background-image: url("/images/bg-all-new-section.jpg");
   }
@@ -491,6 +497,37 @@ main .in-the-news div {
   }
   .our-story {
     background-image: url("/images/bg-our-story-section-tablet.jpg");
+  }
+  .all-new h3,
+  .feeling-lucky h3 {
+    background-color: rgba(0, 0, 0, 0.3333333333);
+    background-blend-mode: darken;
+    margin-left: 30%;
+  }
+  .all-new p,
+  .feeling-lucky p {
+    background-color: rgba(0, 0, 0, 0.3333333333);
+    background-blend-mode: darken;
+    padding-left: 12.25vw;
+  }
+  .all-new button,
+  .feeling-lucky button {
+    background: #fff;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 9px;
+    border: none;
+  }
+  .our-story h3 {
+    max-width: 30rem;
+  }
+  .our-story p {
+    text-align: center;
+    padding: 0 10rem;
   }
 }
 /* IN THE NEWS */
