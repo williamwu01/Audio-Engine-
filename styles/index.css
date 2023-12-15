@@ -522,7 +522,8 @@ main .in-the-news div {
   }
   .our-story p {
     text-align: center;
-    padding: 0 10rem;
+    width: 400px;
+    margin: 0 auto;
   }
   .all-new-wrapper,
   .feeling-lucky-wrapper {
@@ -558,6 +559,7 @@ main .in-the-news div {
 @media (min-width: 47rem) {
   .our-story {
     box-shadow: none;
+    height: 500px;
   }
   .our-story h3 {
     font-size: 3.5em;
@@ -565,6 +567,7 @@ main .in-the-news div {
   .our-story p {
     font-size: 1.5em;
     font-style: normal;
+    width: 610px;
   }
   .all-new,
   .feeling-lucky {
@@ -574,6 +577,9 @@ main .in-the-news div {
 @media (min-width: 64rem) {
   .our-story {
     background-image: url("/images/bg-our-story-section.jpg");
+  }
+  .our-story p {
+    width: 700px;
   }
   .all-new-wrapper,
   .feeling-lucky-wrapper {
