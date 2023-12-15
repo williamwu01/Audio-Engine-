@@ -29,49 +29,42 @@ ul > li:hover {
 	left: 0;
 	background-color: $brand-colors;
 	width: 100%;
-}
-
-#nav_menu {
 	overflow: hidden;
 	height: 0;
 	transition: 0.3s all ease-in;
 
 	&.expanded {
-		// display: block;
 		height: 20rem;
-	}
-
-	&.li:hover {
-		background-color: darkgrey;
 	}
 }
 
 .toggle {
 	width: 1.5rem;
 	height: 0.5rem;
-}
 
-.toggle span {
-	display: block;
-	width: 35px;
-	height: 0.2rem;
-	margin: 5px auto;
-	background-color: #ffffff;
-	transition: all 0.3s ease-in-out;
-}
+	span {
+		display: block;
+		width: 35px;
+		height: 0.2rem;
+		margin: 5px auto;
+		background-color: #ffffff;
+		transition: all 0.3s ease-in-out;
+	}
 
-.toggle.active span:nth-child(1) {
-	transform: rotate(-45deg) translate(-5px, 6px);
-}
+	&.active {
+		span:nth-child(1) {
+			transform: rotate(-45deg) translate(-5px, 6px);
+		}
 
-.toggle.active span:nth-child(2) {
-	opacity: 0;
-}
+		span:nth-child(2) {
+			opacity: 0;
+		}
 
-.toggle.active span:nth-child(3) {
-	transform: rotate(45deg) translate(-5px, -7px);
+		span:nth-child(3) {
+			transform: rotate(45deg) translate(-5px, -7px);
+		}
+	}
 }
-
 .icons {
 	display: flex;
 	flex-wrap: nowrap;
@@ -91,7 +84,7 @@ path:hover {
 	fill: orange;
 }
 
-@include mq($tabletLandscape) {
+@include mq($desktopMedium) {
 	.toggle {
 		display: none;
 	}

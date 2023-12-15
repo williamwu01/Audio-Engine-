@@ -89,9 +89,6 @@ ul > li:hover {
   left: 0;
   background-color: #000000;
   width: 100%;
-}
-
-#nav_menu {
   overflow: hidden;
   height: 0;
   transition: 0.3s all ease-in;
@@ -99,15 +96,11 @@ ul > li:hover {
 #nav_menu.expanded {
   height: 20rem;
 }
-#nav_menu.li:hover {
-  background-color: darkgrey;
-}
 
 .toggle {
   width: 1.5rem;
   height: 0.5rem;
 }
-
 .toggle span {
   display: block;
   width: 35px;
@@ -116,15 +109,12 @@ ul > li:hover {
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
-
 .toggle.active span:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .toggle.active span:nth-child(2) {
   opacity: 0;
 }
-
 .toggle.active span:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -7px);
 }
@@ -147,7 +137,7 @@ path:hover {
   fill: orange;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 78rem) {
   .toggle {
     display: none;
   }
@@ -273,9 +263,7 @@ path:hover {
   transition: background-color 0.6s ease;
   z-index: 100;
 }
-
-.dot.active,
-.dot:hover {
+.dot.active, .dot:hover {
   background-color: #ee9700;
 }
 
@@ -296,6 +284,7 @@ path:hover {
 body {
   max-width: 1440px;
   background-color: black;
+  margin: 0 auto;
 }
 
 main {
@@ -313,7 +302,7 @@ main p {
   padding: 1rem;
 }
 main .in-the-news div {
-  padding: 2rem 2rem 1rem;
+  padding: 0.5rem 1rem 1rem;
 }
 
 /* BEST SELLERS */
@@ -475,8 +464,7 @@ main .in-the-news div {
 /* MEDIA QUERY */
 @media (min-width: 32.2rem) {
   .all-new,
-  .feeling-lucky,
-  .our-story {
+  .feeling-lucky {
     position: relative;
     height: 350px;
     background-size: cover;
@@ -488,6 +476,20 @@ main .in-the-news div {
     align-items: flex-end;
     padding: 20px;
     box-shadow: none;
+    top: 0px;
+    left: 0px;
+  }
+  .our-story {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
   }
   .all-new {
     background-image: url("/images/bg-all-new-section.jpg");
@@ -530,6 +532,23 @@ main .in-the-news div {
     padding: 0 10rem;
   }
 }
+@media (min-width: 47rem) {
+  .our-story {
+    box-shadow: none;
+  }
+  .our-story h3 {
+    font-size: 3.5em;
+  }
+  .our-story p {
+    font-size: 1.5em;
+    font-style: normal;
+  }
+}
+@media (min-width: 64rem) {
+  .our-story {
+    background-image: url("/images/bg-our-story-section.jpg");
+  }
+}
 /* IN THE NEWS */
 .in-the-news h2 {
   text-align: center;
@@ -538,7 +557,6 @@ main .in-the-news div {
 .play {
   position: relative;
 }
-
 .play > h3 {
   position: absolute;
   z-index: 100;
@@ -561,6 +579,11 @@ main .in-the-news div {
   margin: 0 auto;
 }
 
+.position-container {
+  position: relative;
+  transform: translate(0, 200px);
+}
+
 .video-container {
   position: fixed;
   top: 0;
@@ -577,17 +600,12 @@ main .in-the-news div {
   transition: all 0.3s;
 }
 
-.position-container {
-  position: relative;
-  transform: translate(10px, 200px);
-}
-
 .video-container .close {
   position: absolute;
   background-color: black;
   color: white;
-  top: 0%;
-  right: 10%;
+  top: -1%;
+  right: 6%;
   font-size: 10px;
   cursor: pointer;
   padding: 0.2rem;
@@ -595,8 +613,8 @@ main .in-the-news div {
 }
 
 .video-container video {
-  width: 90%;
-  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
   transform: scale(0);
   border: 1rem solid white;
   outline: none;
@@ -654,7 +672,7 @@ footer footer div {
 .socials {
   display: flex;
   justify-content: space-evenly;
-  width: 75%;
+  max-width: 250px;
 }
 .socials svg {
   width: 2.5rem;
@@ -667,7 +685,7 @@ footer footer div {
   width: 3rem;
   position: absolute;
   z-index: 9999;
-  top: 69%;
+  top: 60%;
 }
 
 .news-prev {
@@ -712,7 +730,7 @@ section:nth-child(7) {
   width: 3rem;
   position: absolute;
   z-index: 9999;
-  top: 69%;
+  top: 62%;
 }
 
 .shop-prev {
@@ -729,6 +747,7 @@ section:nth-child(7) {
   grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 3rem;
+  margin-left: 1rem;
 }
 
 section:nth-child(3) {

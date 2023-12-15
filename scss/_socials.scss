@@ -4,10 +4,17 @@
 .socials {
 	display: flex;
 	justify-content: space-evenly;
-	width: 75%;
+	// width: 75%;
+	max-width: 250px;
 
 	svg {
 		width: 2.5rem;
 		height: 2.5rem;
 	}
 }
+
+// Email
+
+// main div:last-of-type {
+// 	display: flex;
+// }

@@ -4,6 +4,7 @@
 body {
 	max-width: 1440px;
 	background-color: black;
+	margin: 0 auto;
 }
 
 main {
@@ -21,7 +22,7 @@ main {
 	}
 
 	.in-the-news div {
-		padding: 2rem 2rem 1rem;
+		padding: 0.5rem 1rem 1rem;
 	}
 }
 
@@ -190,8 +191,8 @@ main {
 @include mq($slider-slick) { // 515px
 
 	.all-new,
-	.feeling-lucky,
-	.our-story {
+	.feeling-lucky {
+
 		position: relative;
 		height: 350px;
 		background-size: cover;
@@ -202,9 +203,23 @@ main {
 		justify-content: center;
 		align-items: flex-end;
 		padding: 20px;
-		// box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 		box-shadow: none;
-		
+		top:0px;
+		left:0px;
+	}
+
+	.our-story {
+
+		position: relative;
+		height: 350px;
+		background-size: cover;
+		background-position: center;
+		color: $lite-text;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 20px;
 	}
 
 	.all-new {
@@ -221,19 +236,14 @@ main {
 
 	.all-new h3,
 	.feeling-lucky h3 {
-		// font-size: 2em;
-		// font-weight: lighter;
+		
 		background-color: #0005; background-blend-mode: darken;
 		margin-left: 30%;
 	}
 
 	.all-new p,
 	.feeling-lucky p {
-		// margin: 0;
-		// font-size: 1.15em;
-		// padding-left: 0;
-		// padding-top: 0;
-		// font-weight: lighter;
+	
 		background-color: #0005; background-blend-mode: darken;
 		padding-left: 12.25vw;
 	}
@@ -245,22 +255,40 @@ main {
 	}
 
 	.our-story h3 {
-		// font-size: 2em;
-		// font-weight: 550;
-		// margin: 0 auto;
+
 		max-width: 30rem;
 	}
 
 	.our-story p {
-		// margin: 0;
-		// margin-top: 1em;
-		// font-size: 1em;
-		// padding: 0;
-		// font-weight: lighter;
-		// font-style: italic;
+
 		text-align: center;
 		padding: 0 10rem;
 	}
+}
+
+@include mq($news-slider-tablet) { // 752px
+	
+	.our-story {
+
+		box-shadow: none;
+	}
+
+	.our-story h3 {
+		font-size: 3.5em;
+	}
+
+	.our-story p {
+		font-size: 1.5em;
+		font-style: normal;
+	}
+}
+
+@include mq($tabletLandscape) { // 1024px
+
+	.our-story {
+		background-image: url("/images/bg-our-story-section.jpg");
+	}
+	
 }
 
 /* IN THE NEWS */
@@ -268,5 +296,6 @@ main {
 .in-the-news h2 {
 	text-align: center;
 }
+
 
 
