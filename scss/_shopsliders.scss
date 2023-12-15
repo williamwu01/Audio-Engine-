@@ -23,6 +23,10 @@
 	top: 54%;
 	left: 44%;
 	transform: translate(-50%, -50%);
+
+	@include mq($tabletPortrait) {
+		font-size: 1.7rem;
+	}
 }
 
 .shop-prev,
@@ -59,4 +63,8 @@ section:nth-child(3) {
 	@include mq($slider-slick) {
 		display: flex;
 	}
+}
+
+.slick-slide {
+	padding: 1rem;
 }

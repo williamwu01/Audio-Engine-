@@ -88,8 +88,6 @@ ul > li:hover {
 #nav_menu {
   left: 0;
   background-color: #000000;
-  width: 100%;
-  overflow: hidden;
   height: 0;
   transition: 0.3s all ease-in;
 }
@@ -147,6 +145,9 @@ path:hover {
   }
   #nav_menu {
     display: flex;
+    height: auto;
+  }
+  #nav-menu {
     height: auto;
   }
 }
@@ -297,12 +298,13 @@ main a {
 }
 main h2 {
   padding: 2rem 1rem;
+  text-align: center;
 }
 main p {
   padding: 1rem;
 }
 main .in-the-news div {
-  padding: 0.5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem 2rem;
 }
 
 /* BEST SELLERS */
@@ -360,12 +362,13 @@ main .in-the-news div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: bottom;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 4rem;
   }
   .best-sellers p {
     text-align: center;
+    width: 100%;
   }
   .best-sellers img {
     width: max-content;
@@ -407,6 +410,7 @@ main .in-the-news div {
   .feeling-lucky h3 {
     font-size: 2em;
     font-weight: lighter;
+    margin-left: 2rem;
   }
   .all-new p,
   .feeling-lucky p {
@@ -466,7 +470,7 @@ main .in-the-news div {
   .all-new,
   .feeling-lucky {
     position: relative;
-    height: 350px;
+    min-height: 350px;
     background-size: cover;
     background-position: center;
     color: white;
@@ -529,7 +533,7 @@ main .in-the-news div {
   .feeling-lucky-wrapper {
     /* width within the parent.
     	can be any percentage. */
-    width: 40%;
+    width: 280px;
   }
   .all-new-wrapper:before,
   .feeling-lucky-wrapper:before {
@@ -562,17 +566,26 @@ main .in-the-news div {
     font-size: 1.5em;
     font-style: normal;
   }
+  .all-new,
+  .feeling-lucky {
+    height: 400px;
+  }
 }
 @media (min-width: 64rem) {
   .our-story {
     background-image: url("/images/bg-our-story-section.jpg");
   }
+  .all-new-wrapper,
+  .feeling-lucky-wrapper {
+    /* width within the parent.
+    		can be any percentage. */
+    width: 320px;
+  }
+  .all-new,
+  .feeling-lucky {
+    height: 575px;
+  }
 }
-/* IN THE NEWS */
-.in-the-news h2 {
-  text-align: center;
-}
-
 .play {
   position: relative;
 }
@@ -582,6 +595,13 @@ main .in-the-news div {
   left: 50%;
   margin-left: -5.5rem;
   top: 2rem;
+  font-weight: 500;
+}
+@media (min-width: 53rem) {
+  .play > h3 {
+    font-size: 3rem;
+    left: 40%;
+  }
 }
 
 .media-bg {
@@ -800,6 +820,11 @@ section:nth-child(7) {
   left: 44%;
   transform: translate(-50%, -50%);
 }
+@media (min-width: 53rem) {
+  .shop-text {
+    font-size: 1.7rem;
+  }
+}
 
 .shop-prev,
 .shop-next {
@@ -835,6 +860,10 @@ section:nth-child(3) {
   .shop-sliders {
     display: flex;
   }
+}
+
+.slick-slide {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

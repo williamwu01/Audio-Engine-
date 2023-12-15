@@ -7,16 +7,23 @@ $(function() {
 					// Initialize Slick slider if it's not initialized
 					if (!$('.shop-sliders').hasClass('slick-initialized')) {
 							$('.shop-sliders').slick({
-									slidesToShow: 4,
+									slidesToShow: 5,
 									slidesToScroll: 1,
 									responsive: [
 											{
-													breakpoint: 826,
+													breakpoint: 1260,
 													settings: {
-															slidesToShow: 3,
+															slidesToShow: 4,
 															slidesToScroll: 1,
 													}
-											}
+											},
+											{
+												breakpoint: 826,
+												settings: {
+														slidesToShow: 3,
+														slidesToScroll: 1,
+												}
+										},
 									],
 									prevArrow: $('.shop-prev'),
 									nextArrow: $('.shop-next')

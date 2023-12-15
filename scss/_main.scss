@@ -15,6 +15,7 @@ main {
 
 	h2 {
 		padding: 2rem 1rem;
+		text-align: center;
 	}
 
 	p {
@@ -22,14 +23,13 @@ main {
 	}
 
 	.in-the-news div {
-		padding: 0.5rem 1rem 1rem;
+		padding: 0.5rem 1rem 1rem 2rem;
 	}
 }
 
 /* BEST SELLERS */
 
 .best-sellers {
-
 	@include mq($phonePortrait) {
 		div {
 			padding: 0 1rem;
@@ -81,13 +81,14 @@ main {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			align-items: bottom;
 			justify-content: center;
 			align-items: flex-end;
+			margin-bottom: 4rem;
 		}
 
 		p {
 			text-align: center;
+			width: 100%;
 		}
 
 		img {
@@ -105,7 +106,6 @@ main {
 /* ALL NEW - FEELING LUCKY - OUR STORY */
 
 @include mq($phonePortrait) {
-
 	.all-new,
 	.feeling-lucky,
 	.our-story {
@@ -119,25 +119,26 @@ main {
 		justify-content: flex-start;
 		align-items: flex-start;
 		padding: 20px;
-		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 	}
 
 	.all-new {
-		background-image: url("/images/bg-all-new-section-phone-square.jpg");
+		background-image: url('/images/bg-all-new-section-phone-square.jpg');
 	}
 
 	.feeling-lucky {
-		background-image: url("/images/bg-feeling-lucky-section-phone-square.jpg");
+		background-image: url('/images/bg-feeling-lucky-section-phone-square.jpg');
 	}
 
 	.our-story {
-		background-image: url("/images/bg-our-story-section-phone-square.jpg");
+		background-image: url('/images/bg-our-story-section-phone-square.jpg');
 	}
 
 	.all-new h3,
 	.feeling-lucky h3 {
 		font-size: 2em;
 		font-weight: lighter;
+		margin-left: 2rem;
 	}
 
 	.all-new p,
@@ -181,20 +182,19 @@ main {
 	.all-new img,
 	.feeling-lucky img,
 	.our-story img {
-
 		display: none;
 	}
 }
 
 /* MEDIA QUERY */
 
-@include mq($slider-slick) { // 515px
+@include mq($slider-slick) {
+	// 515px
 
 	.all-new,
 	.feeling-lucky {
-
 		position: relative;
-		height: 350px;
+		min-height: 350px;
 		background-size: cover;
 		background-position: center;
 		color: $lite-text;
@@ -205,12 +205,11 @@ main {
 		padding: 20px;
 		padding-right: 0;
 		box-shadow: none;
-		top:0px;
-		left:0px;
+		top: 0px;
+		left: 0px;
 	}
 
 	.our-story {
-
 		position: relative;
 		height: 350px;
 		background-size: cover;
@@ -224,15 +223,15 @@ main {
 	}
 
 	.all-new {
-		background-image: url("/images/bg-all-new-section.jpg");
+		background-image: url('/images/bg-all-new-section.jpg');
 	}
-	
+
 	.feeling-lucky {
-		background-image: url("/images/bg-feeling-lucky-section.jpg");
+		background-image: url('/images/bg-feeling-lucky-section.jpg');
 	}
-	
+
 	.our-story {
-		background-image: url("/images/bg-our-story-section-tablet.jpg");
+		background-image: url('/images/bg-our-story-section-tablet.jpg');
 	}
 
 	.all-new button,
@@ -242,20 +241,17 @@ main {
 	}
 
 	.our-story h3 {
-
 		max-width: 30rem;
 	}
 
 	.our-story p {
-
 		text-align: center;
 		padding: 0 10rem;
 	}
 
 	.all-new-wrapper,
 	.feeling-lucky-wrapper {
-
-		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 		padding: 1rem;
 	}
 
@@ -263,14 +259,15 @@ main {
 	.feeling-lucky-wrapper {
 		/* width within the parent.
 			can be any percentage. */
-		width: 40%;
+		width: 280px;
 	}
 
 	.all-new-wrapper:before,
-	.feeling-lucky-wrapper:before { // https://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
-		content: "";
+	.feeling-lucky-wrapper:before {
+		// https://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
+		content: '';
 		float: left;
-	
+
 		/* essentially the aspect ratio. 100% means the
 			div will remain 100% as tall as it is wide, or
 			square in other words.  */
@@ -283,14 +280,15 @@ main {
 
 	.all-new-wrapper:after,
 	.feeling-lucky-wrapper:after {
-		content: "";
+		content: '';
 		display: table;
 		clear: both;
 	}
 }
 
-@include mq($news-slider-tablet) { // 752px
-	
+@include mq($news-slider-tablet) {
+	// 752px
+
 	.our-story {
 		box-shadow: none;
 	}
@@ -303,21 +301,29 @@ main {
 		font-size: 1.5em;
 		font-style: normal;
 	}
+
+	.all-new,
+	.feeling-lucky {
+		height: 400px;
+	}
 }
 
-@include mq($tabletLandscape) { // 1024px
+@include mq($tabletLandscape) {
+	// 1024px
 
 	.our-story {
-		background-image: url("/images/bg-our-story-section.jpg");
+		background-image: url('/images/bg-our-story-section.jpg');
 	}
-	
+
+	.all-new-wrapper,
+	.feeling-lucky-wrapper {
+		/* width within the parent.
+				can be any percentage. */
+		width: 320px;
+	}
+
+	.all-new,
+	.feeling-lucky {
+		height: 575px;
+	}
 }
-
-/* IN THE NEWS */
-
-.in-the-news h2 {
-	text-align: center;
-}
-
-
-

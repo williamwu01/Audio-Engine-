@@ -10,6 +10,12 @@
 		left: 50%;
 		margin-left: -5.5rem;
 		top: 2rem;
+		font-weight: 500;
+
+		@include mq($tabletPortrait) {
+			font-size: 3rem;
+			left: 40%;
+		}
 	}
 }
 

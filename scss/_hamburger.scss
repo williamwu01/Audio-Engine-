@@ -28,8 +28,8 @@ ul > li:hover {
 #nav_menu {
 	left: 0;
 	background-color: $brand-colors;
-	width: 100%;
-	overflow: hidden;
+	// width: 100%;
+	// overflow: hidden;
 	height: 0;
 	transition: 0.3s all ease-in;
 
@@ -96,6 +96,10 @@ path:hover {
 
 	#nav_menu {
 		display: flex;
+		height: auto;
+	}
+
+	#nav-menu {
 		height: auto;
 	}
 }
