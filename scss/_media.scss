@@ -3,14 +3,14 @@
 
 .play {
 	position: relative;
-}
 
-.play > h3 {
-	position: absolute;
-	z-index: 100;
-	left: 50%;
-	margin-left: -5.5rem;
-	top: 2rem;
+	> h3 {
+		position: absolute;
+		z-index: 100;
+		left: 50%;
+		margin-left: -5.5rem;
+		top: 2rem;
+	}
 }
 
 .media-bg {
@@ -21,10 +21,15 @@
 .play-btn {
 	width: 10rem;
 	position: absolute;
-	top: 30%;
+	top: 22%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+}
+
+.position-container {
+	position: relative;
+	transform: translate(0, 200px);
 }
 
 .video-container {
@@ -43,17 +48,12 @@
 	transition: all 0.3s;
 }
 
-.position-container {
-	position: relative;
-	transform: translate(10px, 200px);
-}
-
 .video-container .close {
 	position: absolute;
 	background-color: black;
 	color: white;
-	top: 0%;
-	right: 10%;
+	top: -1%;
+	right: 6%;
 	font-size: 10px;
 	cursor: pointer;
 	padding: 0.2rem;
@@ -61,8 +61,8 @@
 }
 
 .video-container video {
-	width: 90%;
-	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
 	transform: scale(0);
 	border: 1rem solid white;
 	outline: none;

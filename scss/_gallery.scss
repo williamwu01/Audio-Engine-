@@ -7,7 +7,6 @@
 
 /* Slideshow container */
 .container {
-	// max-width: 1000px;
 	position: relative;
 	margin: auto;
 }
@@ -100,18 +99,16 @@
 	margin: 0 0.3rem 0 0.3rem;
 
 	//desktop margins
-	// margin-right: 1rem;
-	// margin-left: 1rem;
 	background-color: #ffa20081;
 	border-radius: 50%;
 	display: block;
 	transition: background-color 0.6s ease;
 	z-index: 100;
-}
 
-.dot.active,
-.dot:hover {
-	background-color: #ee9700;
+	&.active,
+	&:hover {
+		background-color: #ee9700;
+	}
 }
 
 /* Fading animation */
