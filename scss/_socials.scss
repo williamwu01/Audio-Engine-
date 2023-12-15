@@ -67,9 +67,15 @@
 	height: 2.5rem;
 }
 
-// @media (min-width: 36rem) { // 576px
-// 	.email {
-// 		display: flex;
+@media (min-width: 36rem) { // 576px
+	.socials-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding-right: 2rem;
+	}
 
-// 	}
-// }
+	.socials {
+		max-width: 300px;
+	}
+}

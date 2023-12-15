@@ -726,6 +726,17 @@ footer footer div {
   height: 2.5rem;
 }
 
+@media (min-width: 36rem) {
+  .socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 2rem;
+  }
+  .socials {
+    max-width: 300px;
+  }
+}
 .news-prev,
 .news-next {
   display: none;
