@@ -1,20 +1,75 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.socials {
-	display: flex;
-	justify-content: space-evenly;
-	// width: 75%;
-	max-width: 250px;
+/* SOCIALS */
 
-	svg {
-		width: 2.5rem;
-		height: 2.5rem;
-	}
+.socials {
+	/* width within the parent.
+		can be any percentage. */
+	width: 100%;
+	// padding-left: 2rem;
+	padding-top: 2rem;
 }
+.socials:before { // https://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
+	content: "";
+	float: left;
+
+	/* essentially the aspect ratio. 100% means the
+		div will remain 100% as tall as it is wide, or
+		square in other words.  */
+	padding-bottom: 24px;
+}
+/* this is a clearfix. you can use whatever
+	clearfix you usually use, add
+	overflow:hidden to the parent element,
+	or simply float the parent container. */
+.socials:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.socials svg {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+// BUTTON TOP
+
+.btn-wrap {
+	padding-top: 2rem;
+	padding-left: 2rem;
+}
+
+.btn-wrap a {
+
+	color: #f77d24;
+}
+
+.arrow-up {
+	width: 24px;
+	vertical-align: bottom;
+}
+
+
 
 // Email
 
-// main div:last-of-type {
-// 	display: flex;
+.email {
+	display: flex;
+	align-items: center;
+	// flex-wrap: wrap;
+	padding-bottom: 2rem;
+}
+
+.email svg {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+// @media (min-width: 36rem) { // 576px
+// 	.email {
+// 		display: flex;
+
+// 	}
 // }

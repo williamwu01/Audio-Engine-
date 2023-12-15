@@ -682,12 +682,59 @@ footer footer div {
     padding: 0 15px;
   }
 }
+/* SOCIALS */
 .socials {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 250px;
+  /* width within the parent.
+  	can be any percentage. */
+  width: 100%;
+  padding-top: 2rem;
 }
+
+.socials:before {
+  content: "";
+  float: left;
+  /* essentially the aspect ratio. 100% means the
+  	div will remain 100% as tall as it is wide, or
+  	square in other words.  */
+  padding-bottom: 24px;
+}
+
+/* this is a clearfix. you can use whatever
+	clearfix you usually use, add
+	overflow:hidden to the parent element,
+	or simply float the parent container. */
+.socials:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .socials svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.btn-wrap {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.btn-wrap a {
+  color: #f77d24;
+}
+
+.arrow-up {
+  width: 24px;
+  vertical-align: bottom;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.email svg {
   width: 2.5rem;
   height: 2.5rem;
 }
