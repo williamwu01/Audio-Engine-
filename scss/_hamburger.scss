@@ -29,7 +29,7 @@ ul > li:hover {
 	left: 0;
 	background-color: $brand-colors;
 	// width: 100%;
-	// overflow: hidden;
+	overflow: hidden;
 	height: 0;
 	transition: 0.3s all ease-in;
 
@@ -97,9 +97,10 @@ path:hover {
 	#nav_menu {
 		display: flex;
 		height: auto;
-	}
+		overflow: visible;
 
-	#nav-menu {
-		height: auto;
+		&.expanded {
+			height: auto;
+		}
 	}
 }

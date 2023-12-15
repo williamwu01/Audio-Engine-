@@ -1,3 +1,6 @@
+const toggleEl = document.querySelector('.toggle');
+const navMenu = document.getElementById('nav_menu');
+
 $(function() {
 	// Function to handle Slick initialization or destruction based on window width
 	function handleSlick() {
@@ -102,15 +105,16 @@ $(function() {
 	// Initial check on document ready
 	handleSlick();
 
+	const windowWidth = $(window).width();
 	// Check window size on resize
 	$(window).resize(function() {
 			handleSlick();
+			// if(windowWidth > 1240) {
+			// 	document.getElementById('nav_menu').classList.remove('expanded');
+			// 	console.log('penis');
+			// }
 	});
 });
-
-
-const toggleEl = document.querySelector('.toggle');
-const navMenu = document.getElementById('nav_menu');
 
 toggleEl.addEventListener('click', () => {
 	console.log('click');
