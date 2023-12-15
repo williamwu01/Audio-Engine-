@@ -203,6 +203,7 @@ main {
 		justify-content: center;
 		align-items: flex-end;
 		padding: 20px;
+		padding-right: 0;
 		box-shadow: none;
 		top:0px;
 		left:0px;
@@ -234,20 +235,6 @@ main {
 		background-image: url("/images/bg-our-story-section-tablet.jpg");
 	}
 
-	.all-new h3,
-	.feeling-lucky h3 {
-		
-		background-color: #0005; background-blend-mode: darken;
-		margin-left: 30%;
-	}
-
-	.all-new p,
-	.feeling-lucky p {
-	
-		background-color: #0005; background-blend-mode: darken;
-		padding-left: 12.25vw;
-	}
-
 	.all-new button,
 	.feeling-lucky button {
 		@include white-button;
@@ -264,12 +251,47 @@ main {
 		text-align: center;
 		padding: 0 10rem;
 	}
+
+	.all-new-wrapper,
+	.feeling-lucky-wrapper {
+
+		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+		padding: 1rem;
+	}
+
+	.all-new-wrapper,
+	.feeling-lucky-wrapper {
+		/* width within the parent.
+			can be any percentage. */
+		width: 40%;
+	}
+
+	.all-new-wrapper:before,
+	.feeling-lucky-wrapper:before { // https://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
+		content: "";
+		float: left;
+	
+		/* essentially the aspect ratio. 100% means the
+			div will remain 100% as tall as it is wide, or
+			square in other words.  */
+		padding-bottom: 33%;
+	}
+	/* this is a clearfix. you can use whatever
+		clearfix you usually use, add
+		overflow:hidden to the parent element,
+		or simply float the parent container. */
+
+	.all-new-wrapper:after,
+	.feeling-lucky-wrapper:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 @include mq($news-slider-tablet) { // 752px
 	
 	.our-story {
-
 		box-shadow: none;
 	}
 

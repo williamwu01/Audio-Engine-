@@ -7,7 +7,6 @@
 	/* width within the parent.
 		can be any percentage. */
 	width: 100%;
-	// padding-left: 2rem;
 	padding-top: 2rem;
 }
 .socials:before { // https://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
@@ -23,6 +22,7 @@
 	clearfix you usually use, add
 	overflow:hidden to the parent element,
 	or simply float the parent container. */
+
 .socials:after {
 	content: "";
 	display: table;
@@ -51,14 +51,11 @@
 	vertical-align: bottom;
 }
 
-
-
 // Email
 
 .email {
 	display: flex;
 	align-items: center;
-	// flex-wrap: wrap;
 	padding-bottom: 2rem;
 }
 
@@ -68,6 +65,7 @@
 }
 
 @media (min-width: 36rem) { // 576px
+	
 	.socials-wrapper {
 		display: flex;
 		justify-content: space-between;
